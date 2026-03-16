@@ -3,4 +3,131 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+body{
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+/*********** HEADER **************/
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #eee;
+  padding: 10px; 
+}
+
+.siteName a, #tools a{
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+#tools a{
+  font-size: 1rem;
+  display: block;
+  text-align: right;
+}
+
+/*********** NAVIGATION **************/
+
+nav{
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+nav li{
+  text-decoration: none;
+}
+
+/*********** FOOTER **************/
+
+
+/********* Home Page ************/
+h1{
+  padding: 1rem;
+}
+
+.hero-container{
+  position: relative;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  display: block;
+}
+
+.cta{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  color: rgb(0, 140, 255);
+  line-height: 20px;
+  padding: 15px;
+}
+
+.cta button{
+  padding: 10px;
+  background-color: rgb(0, 140, 255);
+  color: black;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+}
+
+.section-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reviews h2{
+  margin: 10px 0;
+}
+
+.reviews li{
+  margin: 5px;
+}
+
+.upgrade-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.upgrade-grid figure{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+}
+
+.upgrade-grid .img-container{
+  background-color: rgb(0, 140, 255);
+  width: 210px; 
+  height: 100px;
+  border-radius: 10px;
+  border: 1px black solid;
+}
+
+.upgrade-grid img{
+  display: block;
+  justify-self: center;
+  align-self: center;
+  padding: 1rem;
+}
+

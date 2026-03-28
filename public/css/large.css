@@ -28,4 +28,17 @@
     .reviews{
         grid-column: 2/3;
     }
+
+        /********* Classification Page Large Screens ************/
+    #inv-display {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /********* Vehicle Detail Large Screens ************/
+    .vehicle-detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
 }

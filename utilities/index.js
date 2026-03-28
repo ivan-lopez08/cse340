@@ -6,7 +6,7 @@ const Util = {}
  ************************** */
 Util.getNav = async function (req, res, next) {
   let data = await invModel.getClassifications()
-  console.log(data)
+  // console.log(data)
   let list = "<ul>"
   list += '<li><a href="/" title="Home page">Home</a></li>'
   data.rows.forEach((row) => {
@@ -29,7 +29,7 @@ Util.getNav = async function (req, res, next) {
 * Build the classification view HTML
 * ************************************ */
 Util.buildClassificationGrid = async function(data){
-  let grid
+  let grid = ""
   if(data.length > 0){
     grid = '<ul id="inv-display">'
     data.forEach(vehicle => { 
@@ -57,5 +57,40 @@ Util.buildClassificationGrid = async function(data){
   }
   return grid
 }
+
+/* ********************************
+ * Build vehicle detail HTML
+ * ******************************** */
+Util.buildVehicleDetailGrid = async function (data) {
+  let grid = ""
+
+  if (data) {
+    grid = `
+      <section class="vehicle-detail">
+        <div class="vehicle-detail__image">
+          <img src="${data.inv_image}" alt="Image of ${data.inv_year} ${data.inv_make} ${data.inv_model}">
+        </div>
+        <div class="vehicle-detail__info">
+          <h2>${data.inv_year} ${data.inv_make} ${data.inv_model}</h2>
+          <p><strong>Price:</strong> $${new Intl.NumberFormat("en-US").format(data.inv_price)}</p>
+          <p><strong>Mileage:</strong> ${new Intl.NumberFormat("en-US").format(data.inv_miles)} miles</p>
+          <p><strong>Color:</strong> ${data.inv_color}</p>
+          <p><strong>Description:</strong> ${data.inv_description}</p>
+        </div>
+      </section>
+    `
+  } else {
+    grid += '<p class="notice">Sorry, no matching vehicles could be found.</p>'
+  }
+
+  return grid
+}
+
+/* ****************************************
+ * Middleware For Handling Errors
+ * Wrap other function in this for 
+ * General Error Handling
+ **************************************** */
+Util.handleErrors = fn => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next)
 
 module.exports = Util

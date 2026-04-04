@@ -235,3 +235,260 @@ h1{
 .vehicle-detail__info p strong {
   color: black;
 }
+
+/********* Account Login Page ************/
+.login-container {
+  padding: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.login-form label {
+  font-weight: bold;
+}
+
+.login-form input {
+  padding: 0.75rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-form button {
+  padding: 0.85rem;
+  background-color: rgb(0, 140, 255);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.login-form button:hover {
+  opacity: 0.9;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.register-link a {
+  color: rgb(0, 140, 255);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/********* Account Register Page ************/
+.register-container {
+  padding: 1rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.register-form label {
+  font-weight: bold;
+}
+
+.register-form input {
+  padding: 0.75rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.register-form button {
+  padding: 0.85rem;
+  background-color: rgb(0, 140, 255);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.register-form button:hover {
+  opacity: 0.9;
+}
+
+.form-note {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.password-requirements {
+  background-color: #eef6ff;
+  border-left: 4px solid rgb(0, 140, 255);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.password-requirements p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.password-requirements ul {
+  padding-left: 1.25rem;
+}
+
+.password-requirements li {
+  margin-bottom: 0.25rem;
+}
+
+/********* Inventory Management Page ************/
+.management-container {
+  padding: 1rem;
+}
+
+.management-intro {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.management-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
+
+.management-links a {
+  display: block;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.management-links a:hover {
+  background-color: #eef6ff;
+  border-color: rgb(0, 140, 255);
+}
+
+/********* Add Classification Page ************/
+.classification-container {
+  padding: 1rem;
+}
+
+.classification-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.classification-form label {
+  font-weight: bold;
+}
+
+.classification-form input {
+  padding: 0.75rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.classification-form button {
+  padding: 0.85rem;
+  background-color: rgb(0, 140, 255);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.classification-form button:hover {
+  opacity: 0.9;
+}
+
+/********* Add Inventory Page ************/
+.inventory-container {
+  padding: 1rem;
+}
+
+.inventory-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.inventory-form label {
+  font-weight: bold;
+}
+
+.inventory-form input,
+.inventory-form select,
+.inventory-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.inventory-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.inventory-form button {
+  padding: 0.85rem;
+  background-color: rgb(0, 140, 255);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inventory-form button:hover {
+  opacity: 0.9;
+}

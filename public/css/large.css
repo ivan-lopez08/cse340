@@ -41,4 +41,16 @@
         gap: 2rem;
         align-items: start;
     }
+
+        .login-form {
+        max-width: 450px;
+    }
+
+        .register-form {
+        max-width: 500px;
+    }
+
+        .management-links {
+        max-width: 500px;
+    }
 }
